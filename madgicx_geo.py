@@ -6,10 +6,11 @@ import re
 # Get args
 # --------------------
 
-api_url = 'http://localhost:8000/api/country/insight'
+api_url = 'https://protected-harbor-94258.herokuapp.com/api/country/insight'
+# api_url = 'http://localhost:8000/api/country/insight' # LOCAL API URL
 
 cities_input: str = " ".join(sys.argv[1:])
-print(cities_input)
+# print(cities_input)
 
 cities: str
 params: dict = {'cities': {}}
